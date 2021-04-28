@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>BookStore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="margin:50px auto auto auto; background: url('book.jpg') no-repeat center center; background-size: 100%;" >
+        
+        <button style="float:left; background-color:red; height:35px;" type="button"><a href="ViewBookServlet" style="color:white;">View All the Books</a></button> 
+        <button style="float:right; background-color:red; height:35px;" type="button"><a href="ViewAvailableBookServlet" style="color:white;">View The Available Books</a></button>  
+        
+      <section class="form-container">
+          
+        <h1 style="text-align: center; color:coral; font-size: 35px; ">Add New Book</h1>  
+        <form action="SaveBookServlet" method="post" style="margin: auto auto auto 600px; ">  
+            <table>  
+                <tr><td>Title:</td><td><input type="text" name="title" required/></td></tr>  
+                <tr><td>Author:</td><td><input type="text" name="author" required/></td></tr>
+                <tr><td>Price:</td><td><input type="text" name="price" required/></td></tr> 
+                <tr><td>Publisher:</td><td><input type="text" name="publisher" required/></td></tr> 
+                <tr><td>Quantity:</td><td><input type="text" name="quantity" /></td></tr> 
+                
+                <tr  style="text-align: center;"><td colspan="2"><input type="submit" value="Save Book" style="height: 40px; width: 45%; color: white; background-color: coral; margin: 15px auto auto 60px;" /></td></tr>  
+            </table>  
+        </form>  
+
+        <br/>  
+
+        
+      </section>
+    </body>  
+            <footer style="background: #ccc; border-top: 3px solid #908e8e; margin: 500px auto auto auto;">
+              <p style="color: #616161; font-size: 13px; text-align: center; margin: 0; padding: 20px 0;">(c) My BookShop </p>
+            </footer>
+</html>
